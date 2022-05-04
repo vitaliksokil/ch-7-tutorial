@@ -1,0 +1,4 @@
+near delete main.fundraiser.testnet fundraiser.testnet && \
+near create-account main.fundraiser.testnet --masterAccount fundraiser.testnet && \
+./build.sh && near deploy main.fundraiser.testnet --wasmFile res/fundraisers_near.wasm
+near call main.fundraiser.testnet new '{}' --accountId main.fundraiser.testnet
